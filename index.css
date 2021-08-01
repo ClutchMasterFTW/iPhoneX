@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'sf_ui_displaythin';
+    src: url('fonts/sfuidisplay-thin-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displayultralight';
+    src: url('fonts/sfuidisplay-ultralight-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displayblack';
+    src: url('fonts/sfuidisplay-black-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaybold';
+    src: url('fonts/sfuidisplay-bold-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displayheavy';
+    src: url('fonts/sfuidisplay-heavy-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaylight';
+    src: url('fonts/sfuidisplay-light-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaymedium';
+    src: url('fonts/sfuidisplay-medium-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displayregular';
+    src: url('fonts/sfuidisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaysemibold';
+    src: url('fonts/sfuidisplay-semibold-webfont.woff2') format('woff2'),
+         url('fonts/sfuidisplay-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    overflow: none;
+    font-family: 'sf_ui_displayregular';
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    background-color: rgb(26, 26, 26);
+}
+
+#background {
+    height: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 6.25vh;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    z-index: 10;
+}
+
+#title {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+#credits {
+    color: rgb(156, 156, 156);
+    font-size: 0.85vw;
+    position: absolute;
+    top: 3.75vw;
+    left: 1vw;
+}
+
+.link {
+    color: red;
+}
+
+#screen {
+    background-color: black;
+    width: 40vh;
+    height: 85%;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: -89vh;
+    border-radius: 3vh;
+    z-index: 0;
+}
+
+#power {
+    /*background-color: red; FIX LATER POSITION*/
+    position: absolute;
+    top: 26.5vh;
+    left: 60.25%;
+    width: 0.75vh;
+    height: 9.75%;
+    cursor: pointer;
+    z-index: 11;
+    border-top-right-radius: 0.5vh;
+    border-bottom-right-radius: 0.5vh;
+}
+
+#ringer {
+    position: absolute;
+    top: 18vh;
+    left: 39.25%;
+    width: 0.65vh;
+    height: 3.5%;
+    cursor: pointer;
+    z-index: 11;
+    border-top-left-radius: 0.25vh;
+    border-bottom-left-radius: 0.25vh;
+}
+
+#volume-up {
+    position: absolute;
+    top: 24.4vh;
+    left: 39.25%;
+    width: 0.65vh;
+    height: 5.95%;
+    cursor: pointer;
+    z-index: 11;
+    border-top-left-radius: 0.5vh;
+    border-bottom-left-radius: 0.5vh;
+}
+
+#volume-down {
+    position: absolute;
+    top: 32.35vh;
+    left: 39.25%;
+    width: 0.65vh;
+    height: 5.95%;
+    cursor: pointer;
+    z-index: 11;
+    border-top-left-radius: 0.5vh;
+    border-bottom-left-radius: 0.5vh;
+}
