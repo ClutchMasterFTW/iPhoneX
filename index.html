@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body onload="startTime()">
         <div id="container">
             <div id="title">iPhone X</div>
             <div id="credits">Created By: <a href="https://github.com/ClutchMasterFTW" class="link">Kyle R.</a></div>
@@ -16,8 +16,20 @@
             <!--SCREEN CONTENTS-->
             <div id="screen">
                 <!--IDEA: Maybe place buttons inside screen div so resizing is better for margin???-->
+                <img src="images/logo.png" id="logo">
+                <img src="images/wallpapers/default.jpg" id="wallpaper">
+                <img src="images/status icons/lock.fill.png" id="lock">
+                <div id="main-time"></div>
+                <div id="lock-screen-time"></div>
+                <div id="lock-screen-date"></div>
+                <div id="home" onclick="home()"></div>
+                <div id="swipe">Swipe up to Unlock</div>
             </div>
+            <button onclick="removeThisShit()">REMOVE</button>
         </div>
         <script src="index.js"></script>
+        <script src="setup.js"></script>
+        <script src="unlock.js"></script>
+        <!--Version 0.02A-->
     </body>
 </html>
