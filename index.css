@@ -204,7 +204,7 @@
 }
 
 #main-time {
-    color: white;
+    color: black;
     /*mix-blend-mode: difference;*/
     font-size: 0.85vw;
     position: absolute;
@@ -250,7 +250,7 @@
 }
 
 #home {
-    background-color: white;
+    background-color: black;
     width: 7vw;
     height: 0.3vw;
     position: absolute;
@@ -262,7 +262,7 @@
 }
 
 #swipe {
-    color: white;
+    color: black;
     position: absolute;
     margin-top: -5vw;
     margin-left: 5.25vw;
@@ -276,4 +276,15 @@
     0%{ opacity: 100%; }
     50%{ opacity: 25%; }
     100%{ opacity: 100%; }
+}
+
+#hello {
+    color: black;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 3vw;
+    top: 18vw;
+    font-family: 'sf_ui_displaysemibold';
+    visibility: hidden;
 }

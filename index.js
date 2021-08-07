@@ -6,6 +6,7 @@ var volume = 5;
 var battery = 100;
 var wallpaper = "default.jpg";
 var mode = "light";
+var setupComplete = false;
 
 var wallpapers = [
     {
@@ -23,9 +24,9 @@ function powerOn() {
         var startupTimeout = setTimeout(function() {
             document.getElementById("logo").style.visibility = "hidden";
             started = true;
-            if(setup == false) {
+            if(setupComplete == false) {
                 setup();
-            } else {
+            } else if(setupComplete == true) {
                 initiateLockScreen("on");
             }
         }, 5000);
@@ -102,7 +103,11 @@ setInterval(function(){
     document.getElementById("lock-screen-date").innerHTML = weekday[d.getDay()] + ", " + month[d.getMonth()] + " " + d.getDate();
 }, 1000);
 
+function home() {
+    //After setup is complete, the home button should activate this function instead of "setupHome()".
+}
+
 function removeThisShit() {
     //REMOVE THIS LATER!!!!
-    setup = true;
+    setupComplete = true;
 }
